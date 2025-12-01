@@ -22,30 +22,96 @@
     </nav>
 
     <main>
+        <section class="special offer">
+            <h2>Get a Free Dental Checkup at 100SMILES Dental Care</h2>
+            <p>Are you ready to take the first step towards a healthier, brighter smile?</p>
+            <p>100SMILES Dental Care is excited to offer a FREE dental checkup on Saturday, 5th July starting 9am!</p>
+            <p>This is the perfect opportunity to ensure your dental health is in top shape without any cost.</p>
+            
+            <p>LIMITED SLOTS AVAILABLE!</p>
+            <p>Don't miss out on this fantastic opportunity to get a free dental checkup. Book your appointment today 
+            and take the first step towards a healthier smile! We look forward to seeing you on Saturday, 5th July!</p>
+        </section>
         
-        <p>We would love to hear from you! Whether you're booking an appointment, asking a question, or just saying hello, our team is here to help.</p>
-        
-        <h2>Clinic Information</h2>
+        <section>
+            <h3>How To Book Your Free Checkup:</h3>
         <ul>
-            <li>Address: 33 Fantail Street, Razole, Queensland</li>
-            <li>Phone: <a class="tel-link" href="tel:0750005599">07 5000 5599</a></li>
-            <li>Email: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></li>
+            <li>Call Us: <a class="tel-link" href="tel:0750005599">07 5000 5599</a></li>
+            <li>Email Us: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></li>
+            <li>Visit Us: Drop by our clinic at 195 Fantail Street, Cairnville, Queensland</li>
         </ul>
+        </section>
 
-        <h2>Trading Hours:</h2>
-        <ul>
-            <li>Monday - Friday: 8:30am - 6:30pm</li>
-            <li>Saturday - Sunday: 8:30am - 1pm</li>
-        </ul>
+        <section>
+            <h3>What To Expect During Your Free Checkup:</h3>
+            <ul>
+                <li>Free Examination</li>
+                <li>Advance Booking Cleanup</li>
+                <li>Personalized Advice</li>
+                <li>Treatment Plan</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Trading Hours:</h3>
+            <ul>
+                <li>Monday - Friday: 8:30am - 6:30pm</li>
+                <li>Saturday - Sunday: 8:30am - 1pm</li>
+            </ul>
+        </section>
         
-        <h2>Need Help Booking?</h2>
-        <p>Call us or email us directly. We'll guide you through the process.</p>
-        
+        <section class="booking-form">
+            
+            <h3>Book Your Appointment</h3>
+            
+            <p>Fill out the form below to request your appointment. Our team will confirm your booking via phone or email.</p>
+            
+            <form action="mailto:admin@100smilesdentalcare.com.au" method="post" enctype="text/plain">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <span class="error" id="name-error"></span><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <span class="error" id="name-error"></span><br><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <span class="error" id="name-error"></span><br><br>
+
+                <label for="date">Preferred Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+                <span class="error" id="name-error"></span><br><br>
+
+                <label for="time">Preferred Time:</label><br>
+                <input type="time" id="time" name="time" required><br><br>
+                <span class="error" id="name-error"></span><br><br>
+
+                <label for="service">Service Type:</label><br>
+                <select id="service" name="service" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="checkup">Dental Checkup</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="whitening">Teeth Whitening</option>
+                    <option value="emergency">Emergency Care</option>
+                </select><br><br>
+                <span class="error" id="name-error"></span><br><br>
+
+                <label for="message">Additional Notes:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+                
+                <input type="submit" value="Submit Booking">
+                <input type="reset" value="Clear Form">
+            </form>
+            
+            <p id="success-message">Your booking request has been submitted! Our team will contact you soon.</p>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; Copyright 2025. All Rights Reserved.</p>
     </footer>
-
-</body> 
+<script src="form/form_validation.js"></script>
+</body>
 </html>
